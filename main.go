@@ -20,7 +20,8 @@ type planet struct {
 	HottestTemperature    int `json:"hottestTemperature"`
 	ColdestTemperature    int `json:"coldestTemperature"`
 	PictureUrl			  string `json:"pictureUrl"`
-	ThreeDModelUrl		  string `json:"threeDModelUrl"`
+	ThreeDModelUrlDark	  string `json:"threeDModelUrlDark"`
+	ThreeDModelUrlLight	  string `json:"threeDModelUrlLight"`
 	InterestingFact		  string `json:"interestingFact"`
 }
 
@@ -37,7 +38,8 @@ var planets = []planet {
 		HottestTemperature: 27000000,
 		ColdestTemperature: 0,
 		PictureUrl: "https://i.imgur.com/UP3jh7e.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/sun/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/sun/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/sun/desktop_light.mp4",
 		InterestingFact: "The Sun contains 99.86% of the mass in the Solar System and is about 109 times the diameter of Earth.",
 	},
 	{
@@ -52,7 +54,8 @@ var planets = []planet {
 		HottestTemperature: 800,
 		ColdestTemperature: -290,
 		PictureUrl: "https://i.imgur.com/jTJbpj0.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/mercury/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/mercury/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/mercury/desktop_light.mp4",
 		InterestingFact: "Not only is Mercury the smallest planet, it is also shrinking!",
 	},
 	{
@@ -67,7 +70,8 @@ var planets = []planet {
 		HottestTemperature: 900,
 		ColdestTemperature: -226,
 		PictureUrl: "https://i.imgur.com/MtBAFmy.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/venus_surface/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/venus_surface/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/venus_surface/desktop_light.mp4",
 		InterestingFact: "It takes Venus longer to rotate once on its axis than to complete one orbit of the Sun!",
 	},
 	{
@@ -82,7 +86,8 @@ var planets = []planet {
 		HottestTemperature: 134,
 		ColdestTemperature: -128,
 		PictureUrl: "https://i.imgur.com/G3YZQEU.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/earth/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/earth/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/earth/desktop_light.mp4",
 		InterestingFact: "Earth is the only planet not named after a mythological god or goddess!",
 	},
 	{
@@ -97,7 +102,8 @@ var planets = []planet {
 		HottestTemperature: 70,
 		ColdestTemperature: -225,
 		PictureUrl: "https://i.imgur.com/bR5orPA.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/mars/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/mars/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/mars/desktop_light.mp4",
 		InterestingFact: "Mars has the tallest volcano in the solar system, Olympus Mons.",
 	},
 	{
@@ -112,7 +118,8 @@ var planets = []planet {
 		HottestTemperature: 43000,
 		ColdestTemperature: -260,
 		PictureUrl: "https://i.imgur.com/FpI4wEi.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/jupiter/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/jupiter/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/jupiter/desktop_light.mp4",
 		InterestingFact: "Jupiter has the shortest day of all the planets, rotating once in just under 10 hours.",
 	},
 	{
@@ -127,7 +134,8 @@ var planets = []planet {
 		HottestTemperature: 21000,
 		ColdestTemperature: -191,
 		PictureUrl: "https://i.imgur.com/tyErvuB.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/saturn/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/saturn/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/saturn/desktop_light.mp4",
 		InterestingFact: "Saturn is the only planet in the solar system that is less dense than water.",
 	},
 	{
@@ -142,7 +150,8 @@ var planets = []planet {
 		HottestTemperature: -9000,
 		ColdestTemperature: -224,
 		PictureUrl: "https://i.imgur.com/Hlqh4Zz.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/uranus/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/uranus/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/uranus/desktop_light.mp4",
 		InterestingFact: "Uranus rotates on its side, making its seasons last 21 years each.",
 	},
 	{
@@ -157,7 +166,8 @@ var planets = []planet {
 		HottestTemperature: 12632,
 		ColdestTemperature: -214,
 		PictureUrl: "https://i.imgur.com/D7U1LJc.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/neptune/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/neptune/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/neptune/desktop_light.mp4",
 		InterestingFact: "Neptune was the first planet located through mathematical predictions rather than through regular observation.",
 	},
 	{
@@ -172,7 +182,8 @@ var planets = []planet {
 		HottestTemperature: -232,
 		ColdestTemperature: -387,
 		PictureUrl: "https://i.imgur.com/6JgWf9A.png",
-		ThreeDModelUrl: "https://www.gstatic.com/culturalinstitute/searchar/assets/pluto/desktop_dark.mp4",
+		ThreeDModelUrlDark: "https://www.gstatic.com/culturalinstitute/searchar/assets/pluto/desktop_dark.mp4",
+		ThreeDModelUrlLight: "https://www.gstatic.com/culturalinstitute/searchar/assets/pluto/desktop_light.mp4",
 		InterestingFact: "Pluto has a heart-shaped glacier the size of Texas and Oklahoma combined.",
 	},
 }
